@@ -1,26 +1,12 @@
+import Projects from "@/components/Projects";
 import About from "@/components/Top";
-import { getProjects } from "@/sanity/sanity-utils";
-import Image from "next/image";
-import Link from "next/link";
 
-const HomePage = async () => {
-  const projects = await getProjects();
+const HomePage = () => {
   return (
     <>
       <About />
-      <div>
-        {projects.map((project) => (
-          <Link href={`/projects/${project.slug}`} key={project._id}>
-            <div>{project.name}</div>
-            <Image
-              height={300}
-              width={750}
-              src={project.image}
-              alt={project.name}
-            />
-          </Link>
-        ))}
-      </div>
+      {/* @ts-expect-error Async Server Component */}
+      <Projects />
     </>
   );
 };

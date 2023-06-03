@@ -1,5 +1,4 @@
 import { getProject } from "@/sanity/sanity-utils";
-import { FC } from "react";
 
 interface pageProps {
   params: { project: string };
