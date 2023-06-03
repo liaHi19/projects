@@ -16,9 +16,9 @@ module.exports = {
       bgAlt: "#30353b",
       container: "#1d222a",
       border: "#a4a6a8",
-      firstGrad: "linear-gradient(0deg, bgAlt 0%, bg 100%)",
-      secondGrad: "linear-gradient(180deg, bgAlt 0%, bg 100%)",
-      thirdGrad: "linear-gradient(180deg, bg0%, bg 100%)",
+      firstGrad: "linear-gradient(0deg,  #30353b 0%, #212730 100%)",
+      secondGrad: "linear-gradient(180deg, #30353b 0%, #212730 100%)",
+      thirdGrad: "linear-gradient(180deg, #212730 0%, #212730 100%)",
     },
     fontFamily: {
       primary: ["var(--font-jost)", ...fontFamily.sans],
