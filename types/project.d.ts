@@ -5,7 +5,9 @@ export interface Project {
   _createdAt: Date;
   name: string;
   slug: string;
+  type: string;
   image: string;
+  technologies: string[];
   url: string;
   git: string;
   content: PortableTextBlock[];

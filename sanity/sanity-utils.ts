@@ -9,7 +9,9 @@ export const getProjects = async (): Promise<Project[]> => {
     _createdAt,
     name,
     "slug": slug.current,
+    type,
     "image": image.asset -> url,
+    technologies,
     url, 
     git, 
     content
@@ -23,7 +25,9 @@ export const getProject = async (slug: string): Promise<Project> => {
     _createdAt,
     name,
     "slug": slug.current,
+    type,
     "image": image.asset -> url,
+    technologies,
     url, 
     git, 
     content

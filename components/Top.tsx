@@ -8,7 +8,7 @@ import Container from "./elements/Container";
 
 const Top: FC = () => {
   return (
-    <section className="pt-20 pb-12 md:py-28 min-h-[1/2]">
+    <section className="pt-20 md:py-28 min-h-[1/2]">
       <Container>
         <div className="flex items-center justify-between p-5 gap-6">
           <div className=" flex-1 xl:max-w-2xl text-center dark:text-text">
