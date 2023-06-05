@@ -1,5 +1,5 @@
 const clientConfig = {
-  projectId: process.env.SANITY_ID,
+  projectId: "ajynjh3d",
   dataset: "production",
   apiVersion: "2023-04-24",
 };

@@ -2,7 +2,7 @@
 import { FC } from "react";
 import { useTheme } from "next-themes";
 
-import { RiMoonClearFill } from "react-icons/ri";
+import { BsMoonFill } from "react-icons/bs";
 import { CiSun } from "react-icons/ci";
 
 const ThemeToggle: FC = () => {
@@ -18,7 +18,7 @@ const ThemeToggle: FC = () => {
       {theme === "dark" ? (
         <CiSun className="text-2xl text-title" />
       ) : (
-        <RiMoonClearFill className="text-2xl" />
+        <BsMoonFill className="text-2xl" />
       )}
     </li>
   );

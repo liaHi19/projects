@@ -1,6 +1,6 @@
 export const TYPES = [
   { title: "Web-app", value: "webapp" },
-  { title: "Layout", value: "Layout" },
+  { title: "Layout", value: "layout" },
 ];
 
 const project = {

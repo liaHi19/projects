@@ -29,7 +29,7 @@ module.exports = {
         shadow: "5px 5px rgb(255, 255, 255 /10%)",
       },
       transition: {
-        transition: "cubic-bezier(0.3, 0, 0.3, 1)",
+        transition: "all 0.3s cubic-bezier(0.3, 0, 0.3, 1)",
       },
     },
   },
