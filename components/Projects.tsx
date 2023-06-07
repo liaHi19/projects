@@ -16,7 +16,7 @@ const Projects = async () => {
   const projectsData = [projects, webApps, layouts];
 
   return (
-    <section id="projects" className="pt-16 md:pt-20">
+    <section id="projects" className="py-16 md:py-20">
       <Container>
         <Heading>Projects</Heading>
         <Tab.Group>

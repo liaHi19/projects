@@ -1,3 +1,4 @@
+"use client";
 import { FC } from "react";
 import Image from "next/image";
 
@@ -9,12 +10,12 @@ import Container from "./elements/Container";
 
 const Top: FC = () => {
   return (
-    <section className="pt-20 md:pt-28">
+    <section className="pt-20 md:pt-28   bg-gradient-to-bl from-primary ">
       <Container>
         <div className="min-h-[calc(50vh-5rem)] md:min-h-[calc(100vh-7rem)] flex flex-col justify-center">
           <div className="flex items-center justify-between p-5 gap-6">
             <div className=" flex-1 xl:max-w-2xl text-center dark:text-text">
-              <h1 className="font-bold text-lg sm:text-3xl  lg:text-5xl  font-secondary text-primary uppercase text-lg dark:text-primary mb-1">
+              <h1 className="font-bold text-lg sm:text-3xl lg:text-5xl tracking-wider  font-secondary text-primary uppercase text-lg dark:text-primary mb-3">
                 Nataliia Hirniak
               </h1>
               <h3 className="mb-5 italic text-lg sm:text-2xl lg:text-4xl">
@@ -52,8 +53,8 @@ const Top: FC = () => {
               <Image
                 src="/avatar.png"
                 alt="Natalia Hirniak"
-                width={300}
-                height={300}
+                width={400}
+                height={400}
                 priority
               />
             </div>
