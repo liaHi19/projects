@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { FiLinkedin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 
 import Container from "./elements/Container";
 
@@ -37,6 +38,11 @@ const Top: FC = () => {
                 <li>
                   <a href="https://github.com/liaHi19" target="_blank">
                     <FaGithub className="text-2xl hover:text-primary transition-transition" />
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:gn.natalia19@gmail.com" target="_blank">
+                    <GrMail className="text-2xl hover:text-primary transition-transition" />
                   </a>
                 </li>
               </ul>

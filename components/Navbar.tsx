@@ -30,25 +30,9 @@ const Navbar: FC = () => {
             NH
           </Link>
           <nav>
-            <ul className="flex items-center justify-between gap-4">
+            <div className="flex items-center justify-between gap-4">
               <ThemeToggle />
-              <li>
-                <Link
-                  href="/#projects"
-                  className="hover:text-primary text-xl transition-transition"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#contact"
-                  className="hover:text-primary text-xl transition-transition"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+            </div>
           </nav>
         </div>
       </Container>

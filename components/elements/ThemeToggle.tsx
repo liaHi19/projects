@@ -9,7 +9,7 @@ const ThemeToggle: FC = () => {
   const { setTheme, theme } = useTheme();
 
   return (
-    <li
+    <div
       onClick={() => {
         setTheme(theme === "dark" ? "light" : "dark");
       }}
@@ -20,7 +20,7 @@ const ThemeToggle: FC = () => {
       ) : (
         <BsMoonFill className="text-2xl" />
       )}
-    </li>
+    </div>
   );
 };
 
