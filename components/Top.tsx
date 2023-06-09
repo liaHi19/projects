@@ -2,50 +2,32 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import { FiLinkedin } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
-import { GrMail } from "react-icons/gr";
-
 import Container from "./elements/Container";
+import LinkIcon from "./elements/LinkIcon";
+
+import { profileData } from "@/data/profileData";
 
 const Top: FC = () => {
   return (
-    <section className="pt-20 md:pt-28   bg-gradient-to-bl from-primary ">
+    <section className="pt-20 md:pt-28  bg-no-repeat  bg-top dark:bg-topDark bg-cover bg-center">
       <Container>
         <div className="min-h-[calc(50vh-5rem)] md:min-h-[calc(100vh-7rem)] flex flex-col justify-center">
           <div className="flex items-center justify-between p-5 gap-6">
             <div className=" flex-1 xl:max-w-2xl text-center dark:text-text">
-              <h1 className="font-bold text-lg sm:text-3xl lg:text-5xl tracking-wider  font-secondary text-primary uppercase text-lg dark:text-primary mb-3">
-                Nataliia Hirniak
+              <h1 className="font-extrabold text-lg sm:text-3xl lg:text-5xl tracking-wider  font-secondary text-accent uppercase text-2xl dark:text-accent mb-3">
+                {profileData.name}
               </h1>
-              <h3 className="mb-5 italic text-lg sm:text-2xl lg:text-4xl">
-                <b>Software Developer</b>
+              <h3 className="mb-5 italic text-lg sm:text-2xl lg:text-4xl text-accentLight">
+                <b>{profileData.profession}</b>
               </h3>
               <p className="text-justify font-semibold text-sm sm:text-lg lg:text-xl mb-6">
-                Skilled developer with a strong command over React.js and
-                Node.js, equipped to build exceptional web applications. Feel
-                free to reach out and discover more about my work.
+                {profileData.description}
               </p>
 
               <ul className="flex items-center justify-center gap-4">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/nataliia-hirniak-075537255/"
-                    target="_blank"
-                  >
-                    <FiLinkedin className="text-2xl hover:text-primary transition-transition" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/liaHi19" target="_blank">
-                    <FaGithub className="text-2xl hover:text-primary transition-transition" />
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:gn.natalia19@gmail.com" target="_blank">
-                    <GrMail className="text-2xl hover:text-primary transition-transition" />
-                  </a>
-                </li>
+                {profileData.links.map((link) => (
+                  <LinkIcon key={link.key} Icon={link.icon} link={link.link} />
+                ))}
               </ul>
             </div>
 
@@ -53,8 +35,8 @@ const Top: FC = () => {
               <Image
                 src="/avatar.png"
                 alt="Natalia Hirniak"
-                width={400}
-                height={400}
+                width={350}
+                height={350}
                 priority
               />
             </div>

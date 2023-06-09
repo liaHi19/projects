@@ -3,7 +3,7 @@ import { FC } from "react";
 import { useTheme } from "next-themes";
 
 import { BsMoonFill } from "react-icons/bs";
-import { CiSun } from "react-icons/ci";
+import { HiOutlineSun } from "react-icons/hi";
 
 const ThemeToggle: FC = () => {
   const { setTheme, theme } = useTheme();
@@ -16,9 +16,9 @@ const ThemeToggle: FC = () => {
       className="transition-transition cursor-pointer"
     >
       {theme === "dark" ? (
-        <CiSun className="text-2xl text-title" />
+        <HiOutlineSun className="text-3xl text-title" />
       ) : (
-        <BsMoonFill className="text-2xl" />
+        <BsMoonFill className="text-xl" />
       )}
     </div>
   );

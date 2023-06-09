@@ -18,17 +18,19 @@ const Navbar: FC = () => {
   return (
     <header
       className={`py-4 md:py-6 fixed top-0 inset-x-0 z-50 ${
-        small ? "bg-title  dark:bg-container" : ""
+        small ? "bg-title  dark:bg-bgAlt" : ""
       } transition-transition`}
     >
       <Container>
         <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-lg font-bold italic hover:text-primary transition-transition"
-          >
-            NH
-          </Link>
+          <div className="flex items-center justify-center border-2 hover:border-accent rounded-lg">
+            <Link
+              href="/"
+              className="text-2xl font-bold px-2 hover:text-accent transition-transition"
+            >
+              NH
+            </Link>
+          </div>
           <nav>
             <div className="flex items-center justify-between gap-4">
               <ThemeToggle />

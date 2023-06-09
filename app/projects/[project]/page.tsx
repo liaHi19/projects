@@ -23,7 +23,9 @@ const ProjectPage = async ({ params }: pageProps) => {
   return (
     <div className="flex flex-col justify-center min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-7rem)] py-20 md:py-24">
       <Container>
-        <GoBack />
+        <div className="mb-2">
+          <GoBack />
+        </div>
         <Heading>{project.name}</Heading>
         <ul className="flex items-center justify-end mb-6 lg:mb-8 gap-4">
           <li>

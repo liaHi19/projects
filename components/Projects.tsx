@@ -20,7 +20,7 @@ const Projects = async () => {
       <Container>
         <Heading>Projects</Heading>
         <Tab.Group>
-          <Tab.List className="flex items-center justify-center gap-3 p-2 mb-2">
+          <Tab.List className="flex items-center justify-center gap-4 p-2 mb-2">
             {["All", "Web Apps", "Layouts"].map((tab, ind) => (
               <Tab
                 key={ind}
